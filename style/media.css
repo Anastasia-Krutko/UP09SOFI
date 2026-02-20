@@ -1307,3 +1307,832 @@
 		word-wrap: break-word;
 	}
 }
+/* Под разрешение 390px (iPhone 12/13/14 и другие современные смартфоны) */
+@media (max-width: 390px) {
+  header, main, footer {
+    max-width: 39rem;
+    width: 100%;
+  }
+
+  /* Хэдер */
+  header {
+    padding: 0 1.6rem;
+    height: 5.6rem;
+  }
+
+  .logo {
+    width: 12rem;
+    height: 1.6rem;
+  }
+
+  .header_right {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .header_right::after {
+    width: 3.2rem;
+    height: 3.2rem;
+    content: url(../img/icons/burger.svg);
+    transform: scale(0.8);
+  }
+
+  .header_right:hover aside {
+    width: 18rem;
+    right: -1.6rem;
+    top: 0.8rem;
+    padding: 4rem 1.6rem 1.6rem 1.6rem;
+    gap: 2rem;
+  }
+
+  .headname {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  /* Секция 1 - Здоровая еда */
+  .healthy_food_dilevery {
+    height: auto;
+    padding: 2.4rem 1.6rem 4.8rem 1.6rem;
+  }
+
+  .container {
+    padding: 0;
+    gap: 3.2rem;
+    height: auto;
+  }
+
+  .grid_sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .left_sec1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .deliver {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .info_delivery {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: 2.4rem;
+  }
+
+  .sec1_but_cont {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 3.2rem;
+    width: 100%;
+  }
+
+  .sec1_but {
+    width: 100% !important;
+    height: 4.8rem !important;
+    font-size: 1.6rem !important;
+    line-height: 1.6rem !important;
+    padding: 1.2rem !important;
+  }
+
+  .avatar_and_text {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .img_av {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    margin-left: -1.2rem;
+  }
+
+  .sec1_p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+
+  .img_deliv_grid {
+    width: 100%;
+    height: auto;
+    max-width: 35rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .healthy_food_dilevery picture {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Секция 2 - Логотипы компаний */
+  .company {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .flex_col_sec2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    gap: 1.6rem;
+  }
+
+  .about {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .company_container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+    padding: 0;
+  }
+
+  .logos_company {
+    height: 2.4rem;
+  }
+
+  /* Секция 3 - Как это работает */
+   /* Секция 3 - Как это работает */
+  .healthy_doz_info {
+    padding: 4.8rem 1.6rem;
+    gap: 4.8rem;
+  }
+
+  .healthy_doz_block1 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    gap: 1.2rem;
+  }
+
+  .text_healthy_doz_block1 {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  .healthy_doz_zag {
+    width: 100%;
+    height: auto;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Чередование: текст -> телефон -> текст -> телефон -> текст -> телефон */
+  .healthy_doz_block2_grid_row3_col2 .one_case {
+    order: 1;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 .smartphone_container:nth-of-type(1) {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 .two_case {
+    order: 3;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 .smartphone_container:nth-of-type(2) {
+    order: 4;
+    margin-bottom: 2rem;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 .three_case {
+    order: 5;
+  }
+
+  .healthy_doz_block2_grid_row3_col2 .smartphone_container:nth-of-type(3) {
+    order: 6;
+  }
+
+  .case_info {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .number {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .case_zag {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .case_text {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    height: auto;
+    text-align: center;
+    padding-top: 0.8rem;
+  }
+
+  .smartphone_container {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .smartphone {
+    width: 16rem;
+    height: auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Восстанавливаем круги для телефонов */
+  .smartphone_container:nth-of-type(1)::before {
+    content: '';
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: var(--back-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .smartphone_container:nth-of-type(1)::after {
+    content: '';
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    background-color: var(--front-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .smartphone_container:nth-of-type(2)::before {
+    content: '';
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: var(--back-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .smartphone_container:nth-of-type(2)::after {
+    content: '';
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    background-color: var(--front-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .smartphone_container:nth-of-type(3)::before {
+    content: '';
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+    background-color: var(--back-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .smartphone_container:nth-of-type(3)::after {
+    content: '';
+    width: 28rem;
+    height: 28rem;
+    border-radius: 50%;
+    background-color: var(--front-circle);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+}
+  /* Секция 4 - Прием пищи */
+  .system_ai {
+    height: auto;
+    margin-top: 2.4rem;
+    gap: 4.8rem;
+    padding: 0 1.6rem;
+  }
+
+  .system_text_container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    gap: 1.2rem;
+  }
+
+  .system_text_zag {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .system_zag {
+    width: 100%;
+    height: auto;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .card_container_flex {
+    width: 100%;
+    padding: 0;
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+  }
+
+  .food_card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.5/1;
+  }
+
+  .cadr_full_info_conteiner {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .card_mark_conteiner {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .card_mark {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .card_zag {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .info_container {
+    width: 100%;
+    height: auto;
+    gap: 1.2rem;
+  }
+
+  .card_list {
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .list_zag {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .card_ul {
+    height: auto;
+    gap: 1.2rem;
+  }
+
+  .card_ul li {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .a_conteiner {
+    width: 100%;
+  }
+
+  .text_under_case_block {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  /* Секция 5 - Отзывы и галерея */
+  .presents_company {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 1.6rem;
+  }
+
+  .left_presents {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 0;
+    gap: 2.4rem;
+  }
+
+  .presents_reviews_conteiner {
+    width: 100%;
+  }
+
+  .presents_text_zag {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  .presents_zag {
+    width: 100%;
+    height: auto;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .reviews_grid_2row_2col {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .reviews_block {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .avatar_reviews {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  .reviews_user {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .user_name {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  .img_gallery {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 3.2rem;
+  }
+
+  .gallery_pice {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  /* Секция 6 - Цены */
+  .cost {
+    height: auto;
+    gap: 3.2rem;
+    padding: 3.2rem 1.6rem;
+  }
+
+  .cost_zag_container {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding: 0;
+    gap: 1.2rem;
+  }
+
+  .cost_text_zag {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  .cost_zag {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .cost_card_container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .cost_card {
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 3.2rem 2rem;
+    gap: 2.4rem;
+  }
+
+  .cost_card_pice_one {
+    width: 100%;
+    height: auto;
+  }
+
+  .text_zag_card {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .cost_string {
+    height: auto;
+  }
+
+  .symphol {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    height: auto;
+    padding: 0;
+  }
+
+  .cost_zag_card {
+    font-size: 4rem;
+    line-height: 4rem;
+    height: auto;
+  }
+
+  .reviews_cost {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .cost_info_list {
+    width: 100%;
+  }
+
+  .cost_info_list li {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    gap: 1.2rem;
+  }
+
+  .cost_card_button {
+    width: 100%;
+    height: 5.6rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0;
+  }
+
+  .two_card::after {
+    display: none;
+  }
+
+  .cost_info_under_card {
+    width: 100%;
+    height: auto;
+  }
+
+  .cost_text_info {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .mark_block_cost_container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 1.6rem;
+  }
+
+  .mark_cost {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .mark_cost_img {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+
+  .mark_cost_zag {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .mark_cost_info {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    height: auto;
+  }
+
+  /* Секция 7 - Форма регистрации */
+  .for_registr_form {
+    height: auto;
+    padding: 3.2rem 1.6rem;
+  }
+
+  .registr_form_block {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .registr_left_text_block {
+    width: 100%;
+    height: auto;
+    padding: 2.4rem;
+    gap: 1.6rem;
+  }
+
+  .registr_zag {
+    width: 100%;
+    height: auto;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .registr_text {
+    width: 100%;
+    height: auto;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+
+  .input_form_grid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .form_grid_pice {
+    width: 100%;
+    height: auto;
+    gap: 0.8rem;
+  }
+
+  .form_grid_zag {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: left;
+  }
+
+  .registr_form_input {
+    width: 100%;
+    height: 4.4rem;
+  }
+
+  .registr_form_button {
+    width: 100%;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    padding: 0;
+  }
+
+  .form_right_block {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .form_right_block::before {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .form_img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  /* Футер */
+  footer {
+    height: auto;
+    padding: 4rem 1.6rem;
+    margin-top: 0;
+  }
+
+  .footer_conteiner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .footer_column {
+    width: 100%;
+    height: auto;
+    gap: 1.6rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer_small_column,
+  .footer_medium_column {
+    width: 100%;
+    gap: 1.2rem;
+  }
+
+  .footer_icons {
+    justify-content: center;
+  }
+
+  .footer_text {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .footer_column_zag {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .footer_adres,
+  .footer_contacts,
+  .footer_text_16px {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .footer_contacts a {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+}
