@@ -29,80 +29,115 @@ Omnifood - это веб-сайт для сервиса доставки здо�
 
 Сайт ориентирован на людей, которые хотят питаться здоровой и полезной пищей, но не имеют времени на планирование рациона и приготовление еды.
 
-# До оптимизации
+## Анализ и метрики производительности
+
+# До оптимизации:
 
 <table>
-        <thead>
-            <tr>
-                <th>Метрика</th>
-                <th>До оптимизации</th>
-                <th>Цель</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="metric">Performance Score</td>
-                <td>95</td>
-                <td class="target">> 90</td>
-            </tr>
-            <tr>
-                <td class="metric">FCP</td>
-                <td>0.8</td>
-                <td class="target">< 1.8s</td>
-            </tr>
-            <tr>
-                <td class="metric">LCP</td>
-                <td>1.4</td>
-                <td class="target">< 2.5s</td>
-            </tr>
-            <tr>
-                <td class="metric">CLS</td>
-                <td>0.012</td>
-                <td class="target">< 0.1</td>
-            </tr>
-            <tr>
-                <td class="metric">TBT</td>
-                <td>0</td>
-                <td class="target">< 200ms</td>
-            </tr>
-        </tbody>
-    </table>
-    
-# После оптимизации
+    <th>
+        <tr>
+            <td>Метрика</td>
+            <td>До оптимизации</td>
+            <td>Цель</td>
+        </tr>
+    </th>
+        <tr>
+            <td>Performance Score</td>
+            <td>96</td>
+            <td>> 90</td>
+        </tr>
+        <tr>
+            <td>FCP</td>
+            <td>1,0 сек.</td>
+            <td>< 1.8s</td>
+        </tr>
+        <tr>
+            <td>LCP</td>
+            <td>1,1 сек.</td>
+            <td>< 2.5s</td>
+        </tr>
+        <tr>
+            <td>CLS</td>
+            <td>0,014</td>
+            <td>< 0.1</td>
+        </tr>
+        <tr>
+            <td>TBT</td>
+            <td>0 мс</td>
+            <td>< 200ms</td>
+        </tr>
+</table>
+
+# После оптимизации:
 
 <table>
-        <thead>
-            <tr>
-                <th>Метрика</th>
-                <th>После оптимизации</th>
-                <th>Цель</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="metric">Performance Score</td>
-                <td>99</td>
-                <td class="target">> 90</td>
-            </tr>
-            <tr>
-                <td class="metric">FCP</td>
-                <td>0.6</td>
-                <td class="target">< 1.8s</td>
-            </tr>
-            <tr>
-                <td class="metric">LCP</td>
-                <td>0.9</td>
-                <td class="target">< 2.5s</td>
-            </tr>
-            <tr>
-                <td class="metric">CLS</td>
-                <td>0.008</td>
-                <td class="target">< 0.1</td>
-            </tr>
-            <tr>
-                <td class="metric">TBT</td>
-                <td>0</td>
-                <td class="target">< 200ms</td>
-            </tr>
-        </tbody>
-    </table>
+    <th>
+        <tr>
+            <td>Метрика</td>
+            <td>После оптимизации</td>
+            <td>Цель</td>
+        </tr>
+    </th>
+        <tr>
+            <td>Performance Score</td>
+            <td>100</td>
+            <td>> 90</td>
+        </tr>
+        <tr>
+            <td>FCP</td>
+            <td>0,7 сек.</td>
+            <td>< 1.8s</td>
+        </tr>
+        <tr>
+            <td>LCP</td>
+            <td>0,7 сек.</td>
+            <td>< 2.5s</td>
+        </tr>
+        <tr>
+            <td>CLS</td>
+            <td>0,007</td>
+            <td>< 0.1</td>
+        </tr>
+        <tr>
+            <td>TBT</td>
+            <td>0 мс</td>
+            <td>< 200ms</td>
+        </tr>
+</table>
+
+# После оптимизации на мобильных:
+
+<table>
+    <th>
+        <tr>
+            <td>Метрика</td>
+            <td>После оптимизации</td>
+            <td>Цель</td>
+        </tr>
+    </th>
+        <tr>
+            <td>Performance Score</td>
+            <td>100</td>
+            <td>> 90</td>
+        </tr>
+        <tr>
+            <td>FCP</td>
+            <td>1,8 сек.</td>
+            <td>< 1.8s</td>
+        </tr>
+        <tr>
+            <td>LCP</td>
+            <td>2,3 сек.</td>
+            <td>< 2.5s</td>
+        </tr>
+        <tr>
+            <td>CLS</td>
+            <td>0</td>
+            <td>< 0.1</td>
+        </tr>
+        <tr>
+            <td>TBT</td>
+            <td>0 мс</td>
+            <td>< 200ms</td>
+        </tr>
+</table>
