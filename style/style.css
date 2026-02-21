@@ -59,6 +59,7 @@ header {
 .logo {
 	width: 16.3rem;
 	height: 2.2rem;
+	filter: hue-rotate(-120deg);
 }
 aside,
 .header_right {
@@ -173,9 +174,8 @@ button:active {
 	margin-left: -2rem;
 	transition: 0.2s ease-in;
 	&:hover {
-		transform: scale(130%);
-		margin-left: -1rem;
-		margin-right: 1rem;
+		transform: scale(110%) translateY(-0.6rem);
+
 		filter: drop-shadow(0 0 1rem);
 		transition: 0.5s ease-in-out;
 	}
@@ -275,7 +275,6 @@ button:active {
 	align-items: center;
 	width: 120rem;
 	height: 8.5rem;
-	max-width: 120rem;
 	padding: 0rem 3.2rem 0rem 3.2rem;
 	gap: 1.6rem;
 }
@@ -383,6 +382,7 @@ button:active {
 	position: relative;
 	display: block;
 	overflow: hidden;
+	filter: hue-rotate(-120deg);
 }
 .smartphone_container::after,
 .smartphone_container::before {
@@ -460,7 +460,7 @@ button:active {
 .system_text_container {
 	width: 120rem;
 	height: 13.74rem;
-	max-width: 120rem;
+
 	justify-content: space-between;
 	display: flex;
 	flex-direction: column;
@@ -501,7 +501,7 @@ button:active {
 	flex-direction: row;
 	flex-wrap: wrap;
 	height: max-content;
-	max-width: 120rem;
+
 	padding: 0rem 3.2rem;
 	gap: 6.4rem;
 }
@@ -617,6 +617,7 @@ button:active {
 .img_card_icon {
 	width: 2.4rem;
 	height: 2.4rem;
+	filter: hue-rotate(-120deg);
 }
 .card_string_text {
 	height: 1.8rem;
@@ -658,6 +659,7 @@ button:active {
 .list_style {
 	width: 3rem;
 	height: 3rem;
+	filter: brightness(0) invert(41%) sepia(96%) hue-rotate(-120deg) saturate(74%);
 }
 .card_ul li {
 	height: 2.2rem;
@@ -681,7 +683,7 @@ button:active {
 .a_conteiner {
 	width: 120rem;
 	height: 2.1rem;
-	max-width: 120rem;
+
 	padding: 0 3.2rem;
 	display: flex;
 	justify-content: center;
@@ -848,7 +850,7 @@ button:active {
 .cost_zag_container {
 	width: 120rem;
 	height: 8.5rem;
-	max-width: 120rem;
+
 	margin-top: 9.6rem;
 	display: flex;
 	flex-direction: column;
@@ -882,7 +884,7 @@ button:active {
 .cost_card_container {
 	width: 120rem;
 	height: 64.638rem;
-	max-width: 120rem;
+
 	padding: 0 16.6rem;
 	display: flex;
 	gap: 7rem;
@@ -906,6 +908,7 @@ button:active {
 	&:hover {
 		transform: scale(110%);
 		transition: 0.4s ease-in-out;
+		cursor: pointer;
 	}
 }
 .one_card {
@@ -1078,7 +1081,7 @@ button:active {
 .mark_block_cost_container {
 	width: 120rem;
 	height: 34.795rem;
-	max-width: 120rem;
+
 	padding: 0 3.2rem;
 	display: flex;
 	gap: 6.4rem;
@@ -1098,6 +1101,7 @@ button:active {
 	width: 6.4rem;
 	height: 6.4rem;
 	border-radius: 50%;
+	filter: hue-rotate(-120deg);
 }
 .mark_cost_zag {
 	width: inherit;
@@ -1284,7 +1288,6 @@ footer {
 .footer_conteiner {
 	width: 120rem;
 	height: 21.1rem;
-	max-width: 120rem;
 	padding: 0 3.2rem;
 	display: flex;
 	flex-direction: row;
@@ -1374,6 +1377,7 @@ footer {
 	width: inherit;
 	height: 5.16rem;
 	display: flex;
+	gap: 1.6rem;
 	flex-direction: column;
 	font-weight: 400;
 	font-style: normal;
@@ -1397,71 +1401,4 @@ footer {
 	letter-spacing: 0%;
 	vertical-align: middle;
 	color: var(--footer-under-logo);
-}
-/* Стили для сетки карточек 2x2 со списком справа */
-.meals_grid_container {
-  display: grid;
-  grid-template-columns: 1fr 33.6rem;
-  gap: 6.4rem;
-  width: 120rem;
-  max-width: 120rem;
-  padding: 0 3.2rem;
-}
-
-.cards_grid_2x2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6.4rem;
-}
-
-/* Адаптация для планшетов */
-@media (max-width: 1024px) {
-  .meals_grid_container {
-    width: 100rem;
-    gap: 3.3rem;
-    grid-template-columns: 1fr 29rem;
-  }
-  
-  .cards_grid_2x2 {
-    gap: 3.3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .meals_grid_container {
-    width: 76.8rem;
-    grid-template-columns: 1fr;
-    gap: 3.84rem;
-  }
-  
-  .cards_grid_2x2 {
-    gap: 3.84rem;
-  }
-}
-
-/* Адаптация для мобильных 390px */
-@media (max-width: 390px) {
-  .meals_grid_container {
-    width: 100%;
-    padding: 0;
-    grid-template-columns: 1fr;
-    gap: 2.4rem;
-  }
-  
-  .cards_grid_2x2 {
-    grid-template-columns: 1fr;
-    gap: 2.4rem;
-  }
-  
-  .cards_grid_2x2 .card {
-    width: 100%;
-    max-width: 32rem;
-    margin: 0 auto;
-  }
-  
-  .card_list {
-    width: 100%;
-    max-width: 32rem;
-    margin: 0 auto;
-  }
 }
