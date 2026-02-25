@@ -12,7 +12,15 @@
 		<link rel="icon" href="img/mark/favicon1.webp" />
 		<link rel="preload" href="img/hero.webp" as="image" />
 		<link rel="preload" href="img/eating.webp" as="image" />
+		<meta http-equiv="Content-Security-Policy" 
+		 content="default-src 'self'; 
+		 script-src 'self' https://cdn.tailwindcss.com https://unpkg.com;
+		 font-src 'self' https://fonts.gstatic.com;
+		 style-src 'self' https://fonts.googleapis.com;">
 		<title>Omnifood</title>
+		<meta http-equiv="X-Frame-Options" content="DENY">
+		<meta http-equiv="X-Content-Type-Options" content="nosniff">
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 	</head>
 	<body>
 		<!--Хэдер-->
@@ -1645,6 +1653,10 @@
 									type="text"
 									placeholder="Ввведите имя"
 									class="registr_form_input"
+									name="full-name"
+ 									pattern="[A-Za-z\s\-]{2,50}"
+ 									title="Только буквы, пробелы и дефисы"
+									обязательно
 								/>
 							</div>
 							<!--Вторая ячейка формы-->
@@ -1656,6 +1668,10 @@
 									placeholder="Введите email"
 									type="email"
 									class="registr_form_input"
+									name="email"
+ 									pattern="[A-Za-z\s\-]{2,50}"
+ 									title="Только буквы, пробелы и дефисы"
+									обязательно
 								/>
 							</div>
 							<!--Третья ячейка формы-->
@@ -1669,6 +1685,10 @@
 									type="text"
 									placeholder="Будем рады узнать"
 									class="registr_form_input"
+									name="text"
+ 									pattern="[A-Za-z\s\-]{2,50}"
+ 									title="Только буквы, пробелы и дефисы"
+									обязательно
 								/>
 							</div>
 							<!--Четвёртая ячейка формы-->
